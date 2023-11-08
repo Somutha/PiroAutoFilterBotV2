@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = environ.get('API_ID', '20919286')
 API_HASH = environ.get('API_HASH', '57b85f72104db3f08f9795b0410eb556')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6202639884:AAHz62hreUvWdssq8bSazPU5sD7pj5ABPYA')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6475278300:AAH_9Yf8bewRNWz0B-PLr10G67KVJ2bVTiY')
 PORT = environ.get("PORT", "8080")
 
 # Bot settings
@@ -29,14 +29,14 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = time()
 
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://telegra.ph/file/a335a23278664216aa46b.jpg https://telegra.ph/file/8cb71f85fbf94e473b0fc.jpg https://telegra.ph/file/ca5288ff477a5ae329b60.jpg https://telegra.ph/file/fc850215c1d35e02156bb.jpg https://telegra.ph/file/58e88d00a2c95bbd88d3e.jpg https://telegra.ph/file/6d1fe9d8abc161526f328.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/96c4ce76932c9f92c05f0.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/72dff2b65352ba85d0a34.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/2a888a370f479f4338f7c.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5909932224').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001871354889').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6968528769').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002104491612').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -50,7 +50,7 @@ SUPPORT_CHAT_ID = -1001668695643
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Test:Test@cluster0.bsp7iax.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Alax:Alax@cluster0.sdgwcqk.mongodb.net/?retryWrites=true&w=majorityy")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
@@ -58,7 +58,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001992257508'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002027479893'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MoviesHub')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
